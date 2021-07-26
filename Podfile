@@ -3,7 +3,7 @@
 
 platform :ios, '10.0'
 
-target 'FaceApps' do
+target 'iosWebrtc' do
   	use_frameworks!
 	pod 'GoogleWebRTC'
 end

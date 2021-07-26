@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "780EB28021AAE66100312EE1"
-               BuildableName = "FaceApps.app"
-               BlueprintName = "FaceApps"
-               ReferencedContainer = "container:FaceApps.xcodeproj">
+               BuildableName = "iosWebrtc.app"
+               BlueprintName = "iosWebrtc"
+               ReferencedContainer = "container:iosWebrtc.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -31,9 +31,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "780EB28021AAE66100312EE1"
-            BuildableName = "FaceApps.app"
-            BlueprintName = "FaceApps"
-            ReferencedContainer = "container:FaceApps.xcodeproj">
+            BuildableName = "iosWebrtc.app"
+            BlueprintName = "iosWebrtc"
+            ReferencedContainer = "container:iosWebrtc.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <Testables>
@@ -54,9 +54,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "780EB28021AAE66100312EE1"
-            BuildableName = "FaceApps.app"
-            BlueprintName = "FaceApps"
-            ReferencedContainer = "container:FaceApps.xcodeproj">
+            BuildableName = "iosWebrtc.app"
+            BlueprintName = "iosWebrtc"
+            ReferencedContainer = "container:iosWebrtc.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -71,9 +71,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "780EB28021AAE66100312EE1"
-            BuildableName = "FaceApps.app"
-            BlueprintName = "FaceApps"
-            ReferencedContainer = "container:FaceApps.xcodeproj">
+            BuildableName = "iosWebrtc.app"
+            BlueprintName = "iosWebrtc"
+            ReferencedContainer = "container:iosWebrtc.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
