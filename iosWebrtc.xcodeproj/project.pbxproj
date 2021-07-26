@@ -1,0 +1,515 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		780EB28521AAE66100312EE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780EB28421AAE66100312EE1 /* AppDelegate.swift */; };
+		780EB28A21AAE66100312EE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 780EB28821AAE66100312EE1 /* Main.storyboard */; };
+		780EB28C21AAE66200312EE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 780EB28B21AAE66200312EE1 /* Assets.xcassets */; };
+		780EB28F21AAE66200312EE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 780EB28D21AAE66200312EE1 /* LaunchScreen.storyboard */; };
+		781F14E724A7C6B8006BB722 /* WebRTCClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788A754F232EBB2B00886B40 /* WebRTCClient.swift */; };
+		781F14E924A7C8FA006BB722 /* VideoStreamingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781F14E824A7C8FA006BB722 /* VideoStreamingViewController.swift */; };
+		7846259A2332B839003AE42F /* StreamingViewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784625992332B839003AE42F /* StreamingViewcontroller.swift */; };
+		7846259C2332B873003AE42F /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7846259B2332B873003AE42F /* Environment.swift */; };
+		7846259E2332BB1A003AE42F /* AudioBridgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7846259D2332BB1A003AE42F /* AudioBridgeViewController.swift */; };
+		784625A02332BBE2003AE42F /* BaseWebRtcReadyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7846259F2332BBE2003AE42F /* BaseWebRtcReadyViewController.swift */; };
+		78DD6B1824AE05DC00BC92F7 /* VideoBridgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DD6B1724AE05DC00BC92F7 /* VideoBridgeViewController.swift */; };
+		D40A61E826AEB6DC009FD5A3 /* WebRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D40A61E726AEB6DC009FD5A3 /* WebRTC.framework */; };
+		D40A61FB26AEB755009FD5A3 /* JanusWebGate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D40A61FA26AEB74D009FD5A3 /* JanusWebGate.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D40A61F926AEB74D009FD5A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D40A61F526AEB74D009FD5A3 /* JanusWebGate.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 780EB26521AADABD00312EE1;
+			remoteInfo = JanusWebGate;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7825A9BA21B5DF23007D072B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5C3366C116D9CA05FDC2B09E /* Pods-FaceApps.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaceApps.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FaceApps/Pods-FaceApps.debug.xcconfig"; sourceTree = "<group>"; };
+		780EB28121AAE66100312EE1 /* FaceApps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaceApps.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		780EB28421AAE66100312EE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		780EB28921AAE66100312EE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		780EB28B21AAE66200312EE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		780EB28E21AAE66200312EE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		780EB29021AAE66200312EE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		781F14E824A7C8FA006BB722 /* VideoStreamingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoStreamingViewController.swift; sourceTree = "<group>"; };
+		784625992332B839003AE42F /* StreamingViewcontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamingViewcontroller.swift; sourceTree = "<group>"; };
+		7846259B2332B873003AE42F /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		7846259D2332BB1A003AE42F /* AudioBridgeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioBridgeViewController.swift; sourceTree = "<group>"; };
+		7846259F2332BBE2003AE42F /* BaseWebRtcReadyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseWebRtcReadyViewController.swift; sourceTree = "<group>"; };
+		788A754F232EBB2B00886B40 /* WebRTCClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebRTCClient.swift; sourceTree = "<group>"; };
+		78DD6B1724AE05DC00BC92F7 /* VideoBridgeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoBridgeViewController.swift; sourceTree = "<group>"; };
+		D268DFE7D9E13FB2515ADBDB /* Pods-FaceApps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaceApps.release.xcconfig"; path = "Pods/Target Support Files/Pods-FaceApps/Pods-FaceApps.release.xcconfig"; sourceTree = "<group>"; };
+		D40A61E726AEB6DC009FD5A3 /* WebRTC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebRTC.framework; path = Pods/GoogleWebRTC/Frameworks/frameworks/WebRTC.framework; sourceTree = "<group>"; };
+		D40A61F526AEB74D009FD5A3 /* JanusWebGate.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JanusWebGate.xcodeproj; path = JanusWebGate/JanusWebGate.xcodeproj; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		780EB27E21AAE66100312EE1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D40A61E826AEB6DC009FD5A3 /* WebRTC.framework in Frameworks */,
+				D40A61FB26AEB755009FD5A3 /* JanusWebGate.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		410D298948AC8C84B3B1004A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D40A61F526AEB74D009FD5A3 /* JanusWebGate.xcodeproj */,
+				D40A61E726AEB6DC009FD5A3 /* WebRTC.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		780EB27821AAE66100312EE1 = {
+			isa = PBXGroup;
+			children = (
+				780EB28321AAE66100312EE1 /* FaceApps */,
+				780EB28221AAE66100312EE1 /* Products */,
+				DD872CF24283C22FF214C85C /* Pods */,
+				410D298948AC8C84B3B1004A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		780EB28221AAE66100312EE1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				780EB28121AAE66100312EE1 /* FaceApps.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		780EB28321AAE66100312EE1 /* FaceApps */ = {
+			isa = PBXGroup;
+			children = (
+				784625A12332BBEB003AE42F /* ViewControllers */,
+				7846259B2332B873003AE42F /* Environment.swift */,
+				788A754F232EBB2B00886B40 /* WebRTCClient.swift */,
+				780EB28421AAE66100312EE1 /* AppDelegate.swift */,
+				780EB28821AAE66100312EE1 /* Main.storyboard */,
+				780EB28B21AAE66200312EE1 /* Assets.xcassets */,
+				780EB28D21AAE66200312EE1 /* LaunchScreen.storyboard */,
+				780EB29021AAE66200312EE1 /* Info.plist */,
+			);
+			path = FaceApps;
+			sourceTree = "<group>";
+		};
+		784625A12332BBEB003AE42F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				7846259F2332BBE2003AE42F /* BaseWebRtcReadyViewController.swift */,
+				784625992332B839003AE42F /* StreamingViewcontroller.swift */,
+				7846259D2332BB1A003AE42F /* AudioBridgeViewController.swift */,
+				781F14E824A7C8FA006BB722 /* VideoStreamingViewController.swift */,
+				78DD6B1724AE05DC00BC92F7 /* VideoBridgeViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		D40A61F626AEB74D009FD5A3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D40A61FA26AEB74D009FD5A3 /* JanusWebGate.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DD872CF24283C22FF214C85C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5C3366C116D9CA05FDC2B09E /* Pods-FaceApps.debug.xcconfig */,
+				D268DFE7D9E13FB2515ADBDB /* Pods-FaceApps.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		780EB28021AAE66100312EE1 /* FaceApps */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 780EB29321AAE66200312EE1 /* Build configuration list for PBXNativeTarget "FaceApps" */;
+			buildPhases = (
+				829F7BE3AEA1B932DC44A4B4 /* [CP] Check Pods Manifest.lock */,
+				780EB27D21AAE66100312EE1 /* Sources */,
+				780EB27E21AAE66100312EE1 /* Frameworks */,
+				780EB27F21AAE66100312EE1 /* Resources */,
+				F8C1370F15833D273D98EF3C /* [CP] Embed Pods Frameworks */,
+				7825A9BA21B5DF23007D072B /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FaceApps;
+			productName = FaceApps;
+			productReference = 780EB28121AAE66100312EE1 /* FaceApps.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		780EB27921AAE66100312EE1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Igor Khomich";
+				TargetAttributes = {
+					780EB28021AAE66100312EE1 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 780EB27C21AAE66100312EE1 /* Build configuration list for PBXProject "FaceApps" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 780EB27821AAE66100312EE1;
+			productRefGroup = 780EB28221AAE66100312EE1 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = D40A61F626AEB74D009FD5A3 /* Products */;
+					ProjectRef = D40A61F526AEB74D009FD5A3 /* JanusWebGate.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				780EB28021AAE66100312EE1 /* FaceApps */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		D40A61FA26AEB74D009FD5A3 /* JanusWebGate.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = JanusWebGate.framework;
+			remoteRef = D40A61F926AEB74D009FD5A3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		780EB27F21AAE66100312EE1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				780EB28F21AAE66200312EE1 /* LaunchScreen.storyboard in Resources */,
+				780EB28C21AAE66200312EE1 /* Assets.xcassets in Resources */,
+				780EB28A21AAE66100312EE1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		829F7BE3AEA1B932DC44A4B4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FaceApps-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8C1370F15833D273D98EF3C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FaceApps/Pods-FaceApps-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FaceApps/Pods-FaceApps-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FaceApps/Pods-FaceApps-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		780EB27D21AAE66100312EE1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				781F14E724A7C6B8006BB722 /* WebRTCClient.swift in Sources */,
+				781F14E924A7C8FA006BB722 /* VideoStreamingViewController.swift in Sources */,
+				7846259E2332BB1A003AE42F /* AudioBridgeViewController.swift in Sources */,
+				7846259A2332B839003AE42F /* StreamingViewcontroller.swift in Sources */,
+				780EB28521AAE66100312EE1 /* AppDelegate.swift in Sources */,
+				78DD6B1824AE05DC00BC92F7 /* VideoBridgeViewController.swift in Sources */,
+				784625A02332BBE2003AE42F /* BaseWebRtcReadyViewController.swift in Sources */,
+				7846259C2332B873003AE42F /* Environment.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		780EB28821AAE66100312EE1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				780EB28921AAE66100312EE1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		780EB28D21AAE66200312EE1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				780EB28E21AAE66200312EE1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		780EB29121AAE66200312EE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		780EB29221AAE66200312EE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		780EB29421AAE66200312EE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C3366C116D9CA05FDC2B09E /* Pods-FaceApps.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 77MH7DAV5Q;
+				ENABLE_BITCODE = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/GoogleWebRTC/Frameworks/frameworks",
+				);
+				INFOPLIST_FILE = FaceApps/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.noko;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		780EB29521AAE66200312EE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D268DFE7D9E13FB2515ADBDB /* Pods-FaceApps.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 77MH7DAV5Q;
+				ENABLE_BITCODE = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/GoogleWebRTC/Frameworks/frameworks",
+				);
+				INFOPLIST_FILE = FaceApps/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.noko;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		780EB27C21AAE66100312EE1 /* Build configuration list for PBXProject "FaceApps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				780EB29121AAE66200312EE1 /* Debug */,
+				780EB29221AAE66200312EE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		780EB29321AAE66200312EE1 /* Build configuration list for PBXNativeTarget "FaceApps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				780EB29421AAE66200312EE1 /* Debug */,
+				780EB29521AAE66200312EE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 780EB27921AAE66100312EE1 /* Project object */;
+}
