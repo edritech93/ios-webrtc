@@ -18,7 +18,6 @@
 		7846259E2332BB1A003AE42F /* AudioBridgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7846259D2332BB1A003AE42F /* AudioBridgeViewController.swift */; };
 		784625A02332BBE2003AE42F /* BaseWebRtcReadyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7846259F2332BBE2003AE42F /* BaseWebRtcReadyViewController.swift */; };
 		78DD6B1824AE05DC00BC92F7 /* VideoBridgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DD6B1724AE05DC00BC92F7 /* VideoBridgeViewController.swift */; };
-		B0460ED80AE7A44A1D465FF5 /* Pods_iosWebrtc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB5562130AA8FBDE74F41B0C /* Pods_iosWebrtc.framework */; };
 		D40A61E826AEB6DC009FD5A3 /* WebRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D40A61E726AEB6DC009FD5A3 /* WebRTC.framework */; };
 		D40A61FB26AEB755009FD5A3 /* JanusWebGate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D40A61FA26AEB74D009FD5A3 /* JanusWebGate.framework */; };
 /* End PBXBuildFile section */
@@ -64,7 +63,6 @@
 		D268DFE7D9E13FB2515ADBDB /* Pods-iosWebrtc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosWebrtc.release.xcconfig"; path = "Pods/Target Support Files/Pods-iosWebrtc/Pods-iosWebrtc.release.xcconfig"; sourceTree = "<group>"; };
 		D40A61E726AEB6DC009FD5A3 /* WebRTC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebRTC.framework; path = Pods/GoogleWebRTC/Frameworks/frameworks/WebRTC.framework; sourceTree = "<group>"; };
 		D40A61F526AEB74D009FD5A3 /* JanusWebGate.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JanusWebGate.xcodeproj; path = JanusWebGate/JanusWebGate.xcodeproj; sourceTree = "<group>"; };
-		FB5562130AA8FBDE74F41B0C /* Pods_iosWebrtc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iosWebrtc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +72,6 @@
 			files = (
 				D40A61E826AEB6DC009FD5A3 /* WebRTC.framework in Frameworks */,
 				D40A61FB26AEB755009FD5A3 /* JanusWebGate.framework in Frameworks */,
-				B0460ED80AE7A44A1D465FF5 /* Pods_iosWebrtc.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,7 +83,6 @@
 			children = (
 				D40A61F526AEB74D009FD5A3 /* JanusWebGate.xcodeproj */,
 				D40A61E726AEB6DC009FD5A3 /* WebRTC.framework */,
-				FB5562130AA8FBDE74F41B0C /* Pods_iosWebrtc.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
