@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gBy-Xj-q1U">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gBy-Xj-q1U">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -12,7 +12,7 @@
         <!--Streaming-->
         <scene sceneID="EZ0-R2-D1b">
             <objects>
-                <viewController title="Streaming" id="WjB-IA-Nh0" customClass="StreamingViewcontroller" customModule="JanusAudioStreamListener" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Streaming" id="WjB-IA-Nh0" customClass="StreamingViewcontroller" customModule="iosWebrtc" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ktG-G3-b1D">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -70,7 +70,7 @@
         <!--AudioBridge-->
         <scene sceneID="rxV-30-EsE">
             <objects>
-                <viewController title="AudioBridge" id="NtR-Dm-1O4" customClass="AudioBridgeViewController" customModule="JanusAudioStreamListener" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="AudioBridge" id="NtR-Dm-1O4" customClass="AudioBridgeViewController" customModule="iosWebrtc" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yIu-F7-UG5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -135,7 +135,7 @@
         <!--Tab Bar View Controller-->
         <scene sceneID="XRr-ri-eAu">
             <objects>
-                <tabBarController id="gBy-Xj-q1U" customClass="TabBarViewController" customModule="JanusAudioStreamListener" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController id="gBy-Xj-q1U" customClass="TabBarViewController" customModule="iosWebrtc" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="BiJ-Mg-VYe">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -155,7 +155,7 @@
         <!--Video Streaming-->
         <scene sceneID="ZC1-Y4-0sV">
             <objects>
-                <viewController title="Video Streaming" id="g26-st-Loa" customClass="VideoStreamingViewController" customModule="JanusAudioStreamListener" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Video Streaming" id="g26-st-Loa" customClass="VideoStreamingViewController" customModule="iosWebrtc" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nRT-b3-hnz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -219,7 +219,7 @@
         <!--Video Bridge-->
         <scene sceneID="Ozr-bE-t7v">
             <objects>
-                <viewController title="Video Bridge" id="Idr-nb-L7K" customClass="VideoBridgeViewController" customModule="JanusAudioStreamListener" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Video Bridge" id="Idr-nb-L7K" customClass="VideoBridgeViewController" customModule="iosWebrtc" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EG5-rJ-yjp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -248,6 +248,7 @@
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Raq-nJ-iFi">
                                 <rect key="frame" x="16" y="206" width="343" height="404"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="linkColor"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Feed id" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tkY-gx-QXb">
                                 <rect key="frame" x="16" y="97" width="56" height="21"/>
@@ -288,6 +289,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
