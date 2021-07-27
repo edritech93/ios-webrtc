@@ -117,43 +117,43 @@ final class WebRTCClient: NSObject {
     }
     
     func startCaptureLocalVideo(renderer: RTCVideoRenderer, device: AVCaptureDevice?, format: AVCaptureDevice.Format?, fps: Int?) {
-//        guard let capturer = self.videoCapturer as? RTCCameraVideoCapturer else {
-//            return
-//        }
-//
-//            
-//        let camera: AVCaptureDevice
-//        if device != nil {
-//            camera = device!
-//        } else {
-//            camera = RTCCameraVideoCapturer.captureDevices().first { $0.position == .front }! //TODO: IGK if no captureDevices???
-//        }
-//        
-//        
-//        let finalFormat: AVCaptureDevice.Format
-//        if format != nil {
-//            finalFormat = format!
-//        } else {
-//            finalFormat = (RTCCameraVideoCapturer.supportedFormats(for: camera).sorted { (f1, f2) -> Bool in
-//                let width1 = CMVideoFormatDescriptionGetDimensions(f1.formatDescription).width
-//                let width2 = CMVideoFormatDescriptionGetDimensions(f2.formatDescription).width
-//                return width1 < width2
-//            }).last! //TODO: IGK if no supportedFormats?
-//        }
-//        
-//        
-//        let finalFps: Int
-//        if fps != nil {
-//            finalFps = fps!
-//        } else {
-//            finalFps = Int(finalFormat.videoSupportedFrameRateRanges.sorted { return $0.maxFrameRate < $1.maxFrameRate }.last!.maxFrameRate) //TODO: IGK if no videoSupportedFrameRateRanges?
-//        }
-//
-//        capturer.startCapture(with: camera,
-//                              format: finalFormat,
-//                              fps: finalFps)
-//        
-//        self.localVideoTrack?.add(renderer)
+        guard let capturer = self.videoCapturer as? RTCCameraVideoCapturer else {
+            return
+        }
+
+            
+        let camera: AVCaptureDevice
+        if device != nil {
+            camera = device!
+        } else {
+            camera = RTCCameraVideoCapturer.captureDevices().first { $0.position == .front }! //TODO: IGK if no captureDevices???
+        }
+        
+        
+        let finalFormat: AVCaptureDevice.Format
+        if format != nil {
+            finalFormat = format!
+        } else {
+            finalFormat = (RTCCameraVideoCapturer.supportedFormats(for: camera).sorted { (f1, f2) -> Bool in
+                let width1 = CMVideoFormatDescriptionGetDimensions(f1.formatDescription).width
+                let width2 = CMVideoFormatDescriptionGetDimensions(f2.formatDescription).width
+                return width1 < width2
+            }).last! //TODO: IGK if no supportedFormats?
+        }
+        
+        
+        let finalFps: Int
+        if fps != nil {
+            finalFps = fps!
+        } else {
+            finalFps = Int(finalFormat.videoSupportedFrameRateRanges.sorted { return $0.maxFrameRate < $1.maxFrameRate }.last!.maxFrameRate) //TODO: IGK if no videoSupportedFrameRateRanges?
+        }
+
+        capturer.startCapture(with: camera,
+                              format: finalFormat,
+                              fps: finalFps)
+        
+        self.localVideoTrack?.add(renderer)
     }
     
     func renderRemoteVideoTo(view: UIView) {

@@ -24,7 +24,7 @@ class VideoBridgeViewController: BaseWebRtcReadyViewController {
         
         self.runAudioBridgePluginSequence()
         self.webRTCClient.renderRemoteVideoTo(view: self.localVideoView!)
-        self.initializeLocalStream()
+//        self.initializeLocalStream()
 
     }
 
